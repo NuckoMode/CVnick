@@ -1,51 +1,81 @@
-/* Use this file to use your own styles*/
-
-/* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-/* Styles for the body */
-
+/* General Styling */
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+    background-color: #f3e5f5; /* Light purple background */
+    color: #4a148c; /* Deep purple text */
+    font-family: Arial, sans-serif;
 }
 
-/* Styles for custom classes in the document. (There are more, try to find them out!) */
+/* Resume Container */
+.resume-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(74, 20, 140, 0.2);
+}
 
+/* Header */
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #7b1fa2; /* Medium purple */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
 }
 
-.resume-main {
-	background-color: #fffefc;
+.header-content h1 {
+    color: #ffffff;
 }
 
-.resume-aside {
-	background-color: #fff0e0;
+.tagline {
+    color: #d1c4e9; /* Light purple */
 }
 
-/* Styles for lists in the document */
-
-.biography-details li::before, .skill-list li::before {
-	content: ">";
-	font-weight: 800;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em;
+/* Biography Section */
+.biography-list {
+    padding-left: 0;
 }
 
-.biography-details li::before {
-	color: #EE7623;
+.biography-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b39ddb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.biography-details li, .skill-list li {
-	padding-left: 1em;
+/* Logos */
+.biography-logo {
+    max-width: 80px;
+    height: auto;
 }
 
-/* Styles for contact icons */
+/* Contact Section */
+.contact-list {
+    padding-left: 0;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
 
 .contact-icon {
-	height: 1em;
-	flex-basis: 1.4em;
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c; /* Deep purple */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #d1c4e9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
